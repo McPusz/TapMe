@@ -9,6 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var timerLabel: UILabel!
+    
+    var count = 0
+    
+    @IBAction func buttonPressed(){ /* pressing a button */
+        
+        count++
+    
+        
+        scoreLabel.text = "Score \n\(count)"
+        NSLog("Button Pressed")
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +36,7 @@ class ViewController: UIViewController {
     }
 
 
+    
+    
 }
 
